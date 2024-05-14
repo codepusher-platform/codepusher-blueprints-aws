@@ -1,6 +1,10 @@
 provider "aws" {
   region = "{{ .region }}"
+  assume_role {
+    role_arn = "{{ .environment_assume_role_arn }}"
+  }
 }
+
 
 terraform {
   backend "s3" {
