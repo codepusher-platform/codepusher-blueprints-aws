@@ -4,5 +4,4 @@ module "aws-environment" {
   environment_name = "{{ .environment_name }}"
   vpc_cidr         = "{{ .vpc_cidr }}"
   owner            = "{{ .owner }}"
-  region           = "{{ .region }}"
 }
