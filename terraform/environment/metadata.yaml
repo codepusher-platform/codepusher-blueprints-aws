@@ -1,0 +1,36 @@
+apiVersion: codepusher.io/v1alpha1
+kind: template
+metadata:
+  name: codepusher-aws-terraform-environment
+  description: The Codepusher AWS terraform environment template
+  tags:
+    - aws
+    - terraform
+spec:
+  provider: aws
+  owner: codepusher-team
+  type: environment
+  parameters:
+    - title: Environment Details
+      required:
+        - awsAccount
+        - environmentName
+        - awsRegion
+        - vpcCidr
+      properties:
+        awsAccount:
+          title: AWS Account
+          type: array
+          items:
+            type: awsAccount
+        environmentName:
+          title: Environment Name
+          type: string
+        awsRegion:
+          title: AWS Region
+          type: array
+          items:
+            type: awsRegion
+        vpcCidr:
+          title: VPC CIDR
+          type: string
