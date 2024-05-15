@@ -71,3 +71,18 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "default_instance_types" {
+  description = "Node group default instance types"
+  type        = list(string)
+  default     = ["m6i.large", "m5.large", "m5n.large", "m5zn.large"]
+}
+
+variable "environment" {
+  description = "Environment name"
+  type        = string
+}
+
+variable "owner" {
+  description = "The owner name"
+}

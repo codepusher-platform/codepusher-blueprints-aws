@@ -38,7 +38,8 @@ module "eks" {
   subnet_ids = var.vpc_subnet_ids
 
   eks_managed_node_group_defaults = {
-    instance_types = ["m6i.large", "m5.large", "m5n.large", "m5zn.large"]
+    instance_types = var.default_instance_types
+
   }
 
   eks_managed_node_groups = {
@@ -60,7 +61,9 @@ module "eks" {
 
 
   tags = merge(var.tags, {
-
     resource-type = "eks"
+    managedby     = "codepusher-platform"
+    environment   = var.environment
+    owner         = var.owner
   })
 }

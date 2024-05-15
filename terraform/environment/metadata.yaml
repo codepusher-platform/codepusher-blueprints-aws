@@ -10,6 +10,9 @@ spec:
   provider: aws
   owner: codepusher-team
   type: environment
+  driver: 
+    type: opentofu
+    version: "1.17"
   parameters:
     - title: Environment Details
       required:
@@ -17,6 +20,7 @@ spec:
         - environmentName
         - awsRegion
         - vpcCidr
+        - owner
       properties:
         awsAccount:
           title: AWS Account
@@ -34,3 +38,8 @@ spec:
         vpcCidr:
           title: VPC CIDR
           type: string
+        owner:
+          title: Owner
+          type: list
+          items:
+            type: teams

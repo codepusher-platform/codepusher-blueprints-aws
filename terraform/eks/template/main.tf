@@ -1,7 +1,15 @@
 module "aws_eks" {
-  source  = "git::https://github.com/codepusher-platform/codepusher-blueprints-aws.git//terraform/eks/module?ref=v0.1.0"
+  source = "git::https://github.com/codepusher-platform/codepusher-blueprints-aws.git//terraform/eks/module?ref=v0.1.0"
 
-  environment_name = "{{ .environment_name }}"
-  vpc_cidr         = "{{ .vpc_cidr }}"
-  owner            = "{{ .owner }}"
+  cluster_name   = "{{ .cluster_name }}"
+  instance_type  = "{{ .vinstance_type }}"
+  instance_class = "{{ .owner }}"
+  min_nodes      = "{{ .min_nodes }}"
+  max_nodes      = "{{ .max_nodes }}"
+  desired_nodes  = "{{ .desired_nodes }}"
+  disk_capacity  = "{{ .disk_capacity }}"
+  vpc_id         = "{{ .vpc_id }}"
+  subnet_ids     = "{{ .subnet_ids }}"
+  owner          = "{{ .owner}}"
+  environment    = "{{ .environment }}"
 }

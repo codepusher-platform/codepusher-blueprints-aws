@@ -27,6 +27,9 @@ spec:
         - desiredNodes
         - maxNodes
         - diskCapacity
+        - awsRegion
+        - environment
+        - owner
       properties:
         clusterName:
           title: Name
@@ -61,4 +64,11 @@ spec:
         vpcSubnetIds:
           type: environmentVpcSubnetIds
         awsRegion:
-            type: environmentAwsRegion
+          type: environmentAwsRegion
+        environment:
+          type: environmentName
+        owner:
+          title: Owner
+          type: list
+          items:
+            type: teams
