@@ -5,7 +5,6 @@ provider "aws" {
   }
 }
 
-
 terraform {
   backend "s3" {
     bucket         = "{{ .account_state_bucket }}"
