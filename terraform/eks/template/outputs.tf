@@ -1,14 +1,14 @@
 output "aws_eks_cluster_name" {
-  value       = aws.eks.Cluster.eks_cluster.id
+  value       = module.aws_eks.aws_eks_cluster_name
   description = "EKS Cluster Name"
 }
 
 output "cluster_endpoint" {
-  value       = aws.eks.Cluster.eks_cluster.status.endpoint
+  value       = module.aws_eks.cluster_endpoint
   description = "EKS Cluster API Endpoint"
 }
 
 output "aws_eks_cluster_arn" {
-  value       = aws.eks.Cluster.eks_cluster.arn
+  value       = module.aws_eks.aws_eks_cluster_arn
   description = "EKS Cluster ARN"
 } 

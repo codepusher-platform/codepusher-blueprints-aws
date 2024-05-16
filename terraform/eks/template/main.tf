@@ -9,7 +9,7 @@ module "aws_eks" {
   desired_nodes  = "{{ .desired_nodes }}"
   disk_capacity  = "{{ .disk_capacity }}"
   vpc_id         = "{{ .vpc_id }}"
-  subnet_ids     = "{{ .subnet_ids }}"
+  vpc_subnet_ids = "{{ .subnet_ids }}"
   owner          = "{{ .owner}}"
   environment    = "{{ .environment }}"
 }
