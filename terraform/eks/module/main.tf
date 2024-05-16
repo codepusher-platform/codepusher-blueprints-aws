@@ -29,8 +29,9 @@ module "codepusher_eks" {
         }
       })
     }
-    amazon-ebs-csi-driver = {
-      most_recent = true
+    aws-ebs-csi-driver = {
+      most_recent              = true
+      service_account_role_arn = module.ebs_csi_driver_irsa.iam_role_arn
     }
   }
 
@@ -65,5 +66,25 @@ module "codepusher_eks" {
     managedby     = "codepusher-platform"
     environment   = var.environment
     owner         = var.owner
+  })
+}
+
+module "ebs_csi_driver_irsa" {
+  source  = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
+  version = "~> 5.20"
+
+  role_name_prefix = "${var.cluster_name}-ebs-csi-driver-"
+
+  attach_ebs_csi_policy = true
+
+  oidc_providers = {
+    main = {
+      provider_arn               = module.codepusher_eks.oidc_provider_arn
+      namespace_service_accounts = ["kube-system:ebs-csi-controller-sa"]
+    }
+  }
+
+  tags = merge(var.tags, {
+    resource-type = "iam-role"
   })
 }
