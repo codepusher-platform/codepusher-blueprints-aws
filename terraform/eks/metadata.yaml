@@ -1,0 +1,74 @@
+apiVersion: codepusher.io/v1alpha1
+kind: template
+metadata:
+  name: codepusher-aws-terraform-eks
+  description: The Codepusher AWS terraform EKS template
+  tags:
+    - aws
+    - terraform
+    - eks
+spec:
+  owner: codepusher-team
+  provider: aws
+  type: eks
+  driver: 
+    type: opentofu
+    version: "1.17"
+  parameters:
+    - title: EKS Details
+      required:
+        - clusterName
+        - clusterVersion
+        - vpcId
+        - vpcSubnetIds
+        - instanceType
+        - instanceClass
+        - minNodes
+        - desiredNodes
+        - maxNodes
+        - diskCapacity
+        - awsRegion
+        - environment
+        - owner
+      properties:
+        clusterName:
+          title: Name
+          type: string
+        clusterVersion:
+          title: Version
+          type: string
+        instanceType:
+          title: Instance Type
+          type: select
+          items:
+            type: awsEC2InstanceTypes
+        instanceClass:
+          title: Instance Class
+          type: list
+          items:
+            type: awsEC2InstanceClasses
+        minNodes:
+          title: Min Nodes
+          type: int
+        desiredNodes:
+          title: Desired Nodes
+          type: int
+        maxNodes:
+          title: Max Nodes
+          type: int
+        diskCapacity:
+          title: Disk Capacity (GB)
+          type: int  
+        vpcId:
+          type: environmentVpcId
+        vpcSubnetIds:
+          type: environmentVpcSubnetIds
+        awsRegion:
+          type: environmentAwsRegion
+        environment:
+          type: environmentName
+        owner:
+          title: Owner
+          type: list
+          items:
+            type: teams

@@ -21,7 +21,6 @@ variable "tags" {
 
 variable "owner" {
   description = "The owner name"
-  default     = "platform-team"
 }
 
 variable "enable_nat_gateway" {
