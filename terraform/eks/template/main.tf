@@ -1,5 +1,5 @@
 module "aws_eks" {
-  source = "git::https://github.com/codepusher-platform/codepusher-blueprints-aws.git//terraform/eks/module?ref=v0.1.0"
+  source = "git::https://github.com/codepusher-platform/codepusher-blueprints-aws.git//terraform/eks/module?ref={{ .module_version }}"
 
   cluster_name   = "{{ .cluster_name }}"
   instance_type  = "{{ .vinstance_type }}"
