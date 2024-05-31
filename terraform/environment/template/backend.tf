@@ -1,16 +1,16 @@
 provider "aws" {
   region = "{{ .region }}"
   assume_role {
-    role_arn = "{{ .environment_assume_role_arn }}"
+    role_arn = "{{ .environmentAssumeRoleArn }}"
   }
 }
 
 terraform {
   backend "s3" {
-    bucket         = "{{ .account_state_bucket }}"
-    key            = "aws/environment/{{ .environment_name }}/terraform.tfstate"
+    bucket         = "{{ .accountStateBucket }}"
+    key            = "aws/environment/{{ .name }}/terraform.tfstate"
     region         = "{{ .region }}"
     encrypt        = true
-    dynamodb_table = "{{ .account_state_dynamodb_table }}"
+    dynamodb_table = "{{ .accountStateDynamoDBTable }}"
   }
 }
