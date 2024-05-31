@@ -24,7 +24,7 @@ spec:
       properties:
         awsAccount:
           title: AWS Account
-          type: array
+          type: list
           items:
             type: awsAccount
         name:
