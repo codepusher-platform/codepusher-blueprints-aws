@@ -17,24 +17,27 @@ spec:
     - title: Environment Details
       required:
         - awsAccount
-        - environmentName
-        - awsRegion
+        - name
+        - region
         - vpcCidr
         - owner
       properties:
         awsAccount:
           title: AWS Account
-          type: array
+          type: list
           items:
             type: awsAccount
-        environmentName:
+        name:
           title: Environment Name
           type: string
-        awsRegion:
+        region:
           title: AWS Region
-          type: array
+          type: list     
           items:
-            type: awsRegion
+            - us-east-1
+            - us-east-2
+            - us-west-1
+            - us-west-2
         vpcCidr:
           title: VPC CIDR
           type: string

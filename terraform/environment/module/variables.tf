@@ -1,6 +1,5 @@
 variable "environment_name" {
   description = "The environment name"
-  default     = ""
 }
 
 variable "vpc_cidr" {
