@@ -3,8 +3,8 @@ variable "cluster_name" {
   description = "Name of the EKS cluster"
 }
 
-variable "instance_type" {
-  type        = string
+variable "instance_types" {
+  type        = list(string)
   description = "Instance type for the node group (e.g., t3.medium)"
 }
 

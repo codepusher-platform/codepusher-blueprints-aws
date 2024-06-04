@@ -45,9 +45,7 @@ module "codepusher_eks" {
 
   eks_managed_node_groups = {
     initial = {
-      instance_types = [
-        var.instance_type,
-      ]
+      instance_types = var.instance_types
       capacity_type = var.instance_class
       ami_type      = var.ami_type
       disk_size     = var.disk_capacity
