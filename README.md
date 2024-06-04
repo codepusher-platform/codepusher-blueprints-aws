@@ -1,7 +1,8 @@
 # CodePusher Blueprints for AWS
 
-[![Terraform Version](https://img.shields.io/badge/Terraform-v1.x-blue.svg)](https://www.terraform.io/)
-[![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub Actions](https://github.com/codepusher-platform/codepusher-blueprints-aws/actions/workflows/release.yaml/badge.svg)](https://github.com/codepusher-platform/codepusher-blueprints-aws/actions)
 [![Release Version](https://img.shields.io/github/v/release/codepusher-platform/codepusher-blueprints-aws)](https://github.com/codepusher-platform/codepusher-blueprints-aws/releases)
