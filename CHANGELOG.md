@@ -1,3 +1,10 @@
+## [0.1.6](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.5...v0.1.6) (2024-06-04)
+
+
+### Bug Fixes
+
+* **environment:** changed account parameter ([82d0cb8](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/82d0cb8ca05a08f5e10c00d92498788624b3b7e3))
+
 ## [0.1.5](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.4...v0.1.5) (2024-06-04)
 
 
