@@ -1,3 +1,10 @@
+## [0.1.7](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.6...v0.1.7) (2024-06-04)
+
+
+### Bug Fixes
+
+* **templates:** changed template variables and structure ([b7648d4](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/b7648d4e4ec1b24f9fc483c324ee2455111a07dc))
+
 ## [0.1.6](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.5...v0.1.6) (2024-06-04)
 
 
