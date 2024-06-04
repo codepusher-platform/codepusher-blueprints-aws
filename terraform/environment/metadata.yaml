@@ -13,21 +13,21 @@ spec:
   driver: 
     type: opentofu
     version: "1.17"
-  parameters:
+  steps:
     - title: Environment Details
       properties:
         awsAccount:
           title: AWS Account
           type: select
           items:
-            type: accountId
-            from: account
+            type: custom:accountId
         name:
           title: Environment Name
           type: string
         region:
           title: AWS Region
-          type: select     
+          type: select
+          default: us-east-1   
           items:
             - us-east-1
             - us-east-2
@@ -39,16 +39,15 @@ spec:
           type: string
         owner:
           title: Owner
-          type: list
+          type: select
           items:
-            type: teams
-# the properties bellow will be passed implicitly
+            type: custom:teams
         roleArn:
-          type: roleArn
-          from: account
+          type: custom:role
+          autofill: true
         stateBucket:
-          type: stateBucket
-          from: account
+          type: custom:stateBucket
+          autofill: true
         stateTable:
-          type: stateTable
-          from: account
+          type: custom:stateTable
+          autofill: true

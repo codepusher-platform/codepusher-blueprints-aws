@@ -14,7 +14,7 @@ spec:
   driver: 
     type: opentofu
     version: "1.17"
-  parameters:
+  steps:
     - title: EKS Details
       properties:
         clusterName:
@@ -53,27 +53,25 @@ spec:
           title: Owner
           type: select
           items:
-            type: teams
-            from: teams
-# the properties bellow will be passed implicitly
+            type: custom:teams
         vpcId:
-          type: vpcId
-          from: environment
+          type: custom:vpcId
+          autofill: true
         vpcSubnetIds:
-          type: vpcSubnetIds
-          from: environment
+          type: custom:vpcSubnetIds
+          autofill: true
         region:
-          type: region
-          from: environment
+          type: custom:region
+          autofill: true
         environment:
-          type: name
-          from: environment
+          type: custom:name
+          autofill: true
         roleArn:
-          type: roleArn
-          from: account
+          type: custom:roleArn
+          autofill: true
         stateBucket:
-          type: stateBucket
-          from: account
+          type: custom:stateBucket
+          autofill: true
         stateTable:
-          type: stateTable
-          from: account
+          type: custom:stateTable
+          autofill: true
