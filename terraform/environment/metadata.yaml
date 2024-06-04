@@ -21,7 +21,7 @@ spec:
           type: select
           items:
             type: accountId
-            from: aws
+            from: account
         name:
           title: Environment Name
           type: string
