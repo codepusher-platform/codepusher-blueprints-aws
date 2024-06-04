@@ -15,24 +15,19 @@ spec:
     version: "1.17"
   parameters:
     - title: Environment Details
-      required:
-        - awsAccount
-        - name
-        - region
-        - vpcCidr
-        - owner
       properties:
         awsAccount:
           title: AWS Account
-          type: list
+          type: select
           items:
-            type: awsAccount
+            type: accountId
+            from: aws
         name:
           title: Environment Name
           type: string
         region:
           title: AWS Region
-          type: list     
+          type: select     
           items:
             - us-east-1
             - us-east-2
@@ -40,9 +35,20 @@ spec:
             - us-west-2
         vpcCidr:
           title: VPC CIDR
+          default: "10.0.0.0/16"
           type: string
         owner:
           title: Owner
           type: list
           items:
             type: teams
+# the properties bellow will be passed implicitly
+        roleArn:
+          type: roleArn
+          from: account
+        stateBucket:
+          type: stateBucket
+          from: account
+        stateTable:
+          type: stateTable
+          from: account

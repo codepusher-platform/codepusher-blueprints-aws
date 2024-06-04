@@ -70,7 +70,7 @@ spec:
           from: environment
         roleArn:
           type: roleArn
-          from: environment
+          from: account
         stateBucket:
           type: stateBucket
           from: account
