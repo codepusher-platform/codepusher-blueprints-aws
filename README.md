@@ -13,8 +13,6 @@ This repository houses a curated collection of Terraform modules designed to emp
 
 - [Features](#features)
 - [Available Modules](#available-modules)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
