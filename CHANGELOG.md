@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.4...v0.1.5) (2024-06-04)
+
+
+### Bug Fixes
+
+* **metadata:** changed some parameters ([7ac8f51](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/7ac8f51742e234665b7c1c9857add8d89441542b))
+
 ## [0.1.4](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.3...v0.1.4) (2024-06-04)
 
 
