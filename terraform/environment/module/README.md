@@ -30,7 +30,7 @@
 |------|-------------|------|---------|:--------:|
 | <a name="input_azs_qty"></a> [azs\_qty](#input\_azs\_qty) | The number of availability zones | `string` | `"3"` | no |
 | <a name="input_enable_nat_gateway"></a> [enable\_nat\_gateway](#input\_enable\_nat\_gateway) | Enable nat gateway | `string` | `"true"` | no |
-| <a name="input_environment_name"></a> [environment\_name](#input\_environment\_name) | The environment name | `string` | `""` | no |
+| <a name="input_environment_name"></a> [environment\_name](#input\_environment\_name) | The environment name | `any` | n/a | yes |
 | <a name="input_owner"></a> [owner](#input\_owner) | The owner name | `any` | n/a | yes |
 | <a name="input_single_nat_gateway"></a> [single\_nat\_gateway](#input\_single\_nat\_gateway) | Enable single nat gateway | `string` | `"true"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources | `map(string)` | `{}` | no |
