@@ -1,3 +1,15 @@
+# [0.2.0](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.7...v0.2.0) (2024-06-05)
+
+
+### Bug Fixes
+
+* **environment:** changed cidr block ([d039ca6](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/d039ca631e0b1584b1a05c1beb0669e24e86f33c))
+
+
+### Features
+
+* **rds:** added rds module and template ([9428b7a](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/9428b7a3015f95ab4e0b8c294d76177b601371b7))
+
 ## [0.1.7](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.6...v0.1.7) (2024-06-04)
 
 
