@@ -1,0 +1,89 @@
+apiVersion: codepusher.io/v1alpha1
+kind: template
+metadata:
+  name: codepusher-aws-terraform-rds-aurora-serverlessV2
+  displayName: Create a RDS Aurora ServerlessV2
+  description: The Codepusher AWS terraform RDS Aurora template
+  tags:
+    - aws
+    - terraform
+    - rds
+    - aurora
+spec:
+  provider: aws
+  owner: codepusher-team
+  type: rds
+  driver: 
+    type: opentofu
+    version: "1.17"
+  steps:
+    - title: RDS Configuration
+      properties:
+        name:
+          title: Database Name
+          type: string
+          description: "The name of the database to create."
+        serviceRole:
+          title: Attach to Service
+          description: "The service that will access the database."
+          type: select
+          items:
+            type: custom:serviceRole
+        maxCapacity:
+          title: Maximum Capacity (ServerlessV2)
+          type: number
+          default: 1
+          description: "The maximum capacity for the ServerlessV2 scaling configuration."
+        minCapacity:
+          title: Minimum Capacity (ServerlessV2)
+          type: number
+          default: 0.5
+          description: "The minimum capacity for the ServerlessV2 scaling configuration." 
+        instanceType:
+          type: string
+          autofill: true
+          default: "db.serveless"
+        engine:
+          type: string
+          autofill: true
+          default: "aurora-postgresql"
+        engineVersion:
+          type: string
+          autofill: true
+          default: "15.3"
+        clusterFamily:
+          type: string
+          autofill: true
+          default: "aurora-postgresql15"
+        clusterSize:
+          type: defaultValue
+          default: 1
+        vpcId:
+          type: custom:vpcId
+          autofill: true
+        vpcSubnetIds:
+          type: custom:vpcSubnetIds
+          autofill: true
+        vpcDefaultSecurityGroupId:
+          type: custom:vpcDefaultSecurityGroupId
+          autofill: true
+        owner:
+          title: Owner
+          type: select
+          items:
+            type: custom:teams
+        region:
+          type: custom:region
+          autofill: true
+        environment:
+          type: custom:name
+          autofill: true
+        roleArn:
+          type: custom:roleArn
+          autofill: true
+        stateBucket:
+          type: custom:stateBucket
+          autofill: true
+        stateTable:
+          type: custom:stateTable
+          autofill: true
