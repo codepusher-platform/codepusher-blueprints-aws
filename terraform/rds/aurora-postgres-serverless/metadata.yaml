@@ -10,6 +10,7 @@ metadata:
     - rds
     - aurora
 spec:
+  templatePathUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/rds/template"
   provider: aws
   owner: codepusher-team
   type: rds
@@ -23,12 +24,6 @@ spec:
           title: Database Name
           type: string
           description: "The name of the database to create."
-        serviceRole:
-          title: Attach to Service
-          description: "The service that will access the database."
-          type: select
-          items:
-            type: custom:serviceRole
         maxCapacity:
           title: Maximum Capacity (ServerlessV2)
           type: number
@@ -39,6 +34,12 @@ spec:
           type: number
           default: 0.5
           description: "The minimum capacity for the ServerlessV2 scaling configuration." 
+        serviceRole:
+          title: Attach to Service
+          description: "The service that will access the database."
+          type: select
+          items:
+            type: custom:serviceRole
         instanceType:
           type: string
           autofill: true
@@ -58,6 +59,7 @@ spec:
         clusterSize:
           type: defaultValue
           default: 1
+          autofill: true
         vpcId:
           type: custom:vpcId
           autofill: true
