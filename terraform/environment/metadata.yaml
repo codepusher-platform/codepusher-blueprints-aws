@@ -7,6 +7,7 @@ metadata:
     - aws
     - terraform
 spec:
+  templatePathUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/environment/template"
   provider: aws
   owner: codepusher-team
   type: environment

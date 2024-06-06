@@ -8,6 +8,7 @@ metadata:
     - terraform
     - eks
 spec:
+  templatePathUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/eks/template"  
   owner: codepusher-team
   provider: aws
   type: eks
