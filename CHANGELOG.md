@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.0...v0.2.1) (2024-06-06)
+
+
+### Bug Fixes
+
+* **templates:** added templatePathUrl field ([#6](https://github.com/codepusher-platform/codepusher-blueprints-aws/issues/6)) ([06b6040](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/06b6040643dfea1357bc563cf64bcc2444b1d389))
+
 # [0.2.0](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.1.7...v0.2.0) (2024-06-05)
 
 
