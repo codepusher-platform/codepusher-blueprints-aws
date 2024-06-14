@@ -8,11 +8,11 @@ metadata:
     - terraform
     - eks
 spec:
-  templatePathUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/eks/template"  
+  templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/eks/template"  
   owner: codepusher-team
   provider: aws
   type: eks
-  driver: 
+  engine: 
     type: opentofu
     version: "1.17"
   steps:

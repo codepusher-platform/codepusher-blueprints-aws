@@ -10,11 +10,11 @@ metadata:
     - rds
     - aurora
 spec:
-  templatePathUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/rds/template"
+  templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/rds/template"
   provider: aws
   owner: codepusher-team
   type: rds
-  driver: 
+  engine: 
     type: opentofu
     version: "1.17"
   steps:
