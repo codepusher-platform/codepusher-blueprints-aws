@@ -17,11 +17,11 @@ spec:
   steps:
     - title: Environment Details
       properties:
-        awsAccount:
+        cloudAccountId:
           title: AWS Account
           type: select
           items:
-            type: custom:accountId
+            type: custom:cloudAccountId
         name:
           title: Environment Name
           type: string
