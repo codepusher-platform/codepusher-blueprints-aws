@@ -1,3 +1,10 @@
+## [0.2.2](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.1...v0.2.2) (2024-06-16)
+
+
+### Bug Fixes
+
+* **enviroment:** changed cloudAccount on metadata.yaml ([d146465](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/d1464651d30bacabd4303e24a38a59e814bff7fc))
+
 ## [0.2.1](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.0...v0.2.1) (2024-06-06)
 
 
