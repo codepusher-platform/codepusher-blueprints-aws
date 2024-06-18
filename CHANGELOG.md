@@ -1,3 +1,10 @@
+## [0.2.3](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.2...v0.2.3) (2024-06-18)
+
+
+### Bug Fixes
+
+* **eks:** vpc subnet private and public, and change environment var name ([c7185c2](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/c7185c26be709441da37b737c5da86809ecc070c))
+
 ## [0.2.2](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.1...v0.2.2) (2024-06-16)
 
 
