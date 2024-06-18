@@ -58,14 +58,17 @@ spec:
         vpcId:
           type: custom:vpcId
           autofill: true
-        vpcSubnetIds:
-          type: custom:vpcSubnetIds
+        vpcPrivateSubnetIds:
+          type: custom:vpcPrivateSubnetIds
+          autofill: true
+        vpcPublicSubnetIds:
+          type: custom:vpcPublicSubnetIds
           autofill: true
         region:
           type: custom:region
           autofill: true
         environment:
-          type: custom:name
+          type: custom:environmentName
           autofill: true
         roleArn:
           type: custom:roleArn
