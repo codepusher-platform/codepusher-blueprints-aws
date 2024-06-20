@@ -78,7 +78,7 @@ variable "default_instance_types" {
   default     = ["m6i.large", "m5.large", "m5n.large", "m5zn.large"]
 }
 
-variable "environment" {
+variable "environment_name" {
   description = "Environment name"
   type        = string
 }

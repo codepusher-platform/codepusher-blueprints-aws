@@ -8,7 +8,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket         = "{{ .stateBucket }}"
-    key            = "aws/environment/{{ .environment }}/eks/{{ .clusterName }}/terraform.tfstate"
+    key            = "aws/environment/{{ .environmentName }}/eks/{{ .clusterName }}/terraform.tfstate"
     region         = "{{ .region }}"
     encrypt        = true
     dynamodb_table = "{{ .stateTable }}"

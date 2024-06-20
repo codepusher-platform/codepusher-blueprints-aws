@@ -32,7 +32,7 @@ No resources.
 | <a name="input_default_instance_types"></a> [default\_instance\_types](#input\_default\_instance\_types) | Node group default instance types | `list(string)` | <pre>[<br>  "m6i.large",<br>  "m5.large",<br>  "m5n.large",<br>  "m5zn.large"<br>]</pre> | no |
 | <a name="input_desired_nodes"></a> [desired\_nodes](#input\_desired\_nodes) | Desired number of nodes in the node group | `number` | `1` | no |
 | <a name="input_disk_capacity"></a> [disk\_capacity](#input\_disk\_capacity) | Disk capacity in GB for the nodes | `number` | `20` | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | Environment name | `string` | n/a | yes |
+| <a name="input_environment_name"></a> [environment\_name](#input\_environment\_name) | Environment name | `string` | n/a | yes |
 | <a name="input_instance_class"></a> [instance\_class](#input\_instance\_class) | Instance class (OnDemand or Spot) | `string` | `"OnDemand"` | no |
 | <a name="input_instance_types"></a> [instance\_types](#input\_instance\_types) | Instance type for the node group (e.g., m5.xlarge) | `list(string)` | n/a | yes |
 | <a name="input_max_nodes"></a> [max\_nodes](#input\_max\_nodes) | Maximum number of nodes in the node group | `number` | `3` | no |

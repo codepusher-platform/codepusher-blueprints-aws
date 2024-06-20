@@ -62,7 +62,7 @@ module "codepusher_eks" {
   tags = merge(var.tags, {
     resource-type = "eks"
     managedby     = "codepusher-platform"
-    environment   = var.environment
+    environment   = var.environment_name
     owner         = var.owner
   })
 }
