@@ -1,3 +1,10 @@
+## [0.2.8](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.7...v0.2.8) (2024-06-20)
+
+
+### Bug Fixes
+
+* **eks:** changed instance_type ([7b0441e](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/7b0441e4fe631f84b395e49d979f61580b744fda))
+
 ## [0.2.7](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.6...v0.2.7) (2024-06-20)
 
 
