@@ -1,3 +1,10 @@
+## [0.2.4](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.3...v0.2.4) (2024-06-20)
+
+
+### Bug Fixes
+
+* **templates:** updated values ([ab1430f](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/ab1430fc670dd672f27e5a9204afbafbf5a65a81))
+
 ## [0.2.3](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.2...v0.2.3) (2024-06-18)
 
 
