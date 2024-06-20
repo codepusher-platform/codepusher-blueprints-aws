@@ -2,10 +2,21 @@ repos:
   - repo: https://github.com/terraform-docs/terraform-docs
     rev: v0.18.0
     hooks:
-      - id: terraform-docs-go
+      - id: eks-module
         args: 
           - markdown 
           - table
-          - --recursive
           - --output-file README.md
-          - --output-mode inject
+          - ./terraform/eks/module
+      - id: environment-module
+        args: 
+          - markdown 
+          - table
+          - --output-file README.md
+          - ./terraform/environment/module
+      - id: rds-module
+        args: 
+          - markdown 
+          - table
+          - --output-file README.md
+          - ./terraform/rds/module
