@@ -5,7 +5,7 @@ variable "cluster_name" {
 
 variable "instance_types" {
   type        = list(string)
-  description = "Instance type for the node group (e.g., t3.medium)"
+  description = "Instance type for the node group (e.g., m5.medium)"
 }
 
 variable "instance_class" {
