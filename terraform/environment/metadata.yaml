@@ -44,7 +44,7 @@ spec:
           items:
             type: custom:teams
         roleArn:
-          type: custom:role
+          type: custom:roleArn
           autofill: true
         stateBucket:
           type: custom:stateBucket

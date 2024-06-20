@@ -11,5 +11,5 @@ module "aws_eks" {
   owner                  = "{{ .owner }}"
   vpc_id                 = "{{ .vpcId }}"
   vpc_private_subnet_ids = "{{ .vpcPrivateSubnetIds }}"
-  environment            = "{{ .environment }}"
+  environment_name       = "{{ .environmentName }}"
 }

@@ -64,7 +64,7 @@ spec:
         region:
           type: custom:region
           autofill: true
-        environment:
+        environmentName:
           type: custom:environmentName
           autofill: true
         roleArn:
