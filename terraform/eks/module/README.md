@@ -34,13 +34,13 @@ No resources.
 | <a name="input_disk_capacity"></a> [disk\_capacity](#input\_disk\_capacity) | Disk capacity in GB for the nodes | `number` | `20` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment name | `string` | n/a | yes |
 | <a name="input_instance_class"></a> [instance\_class](#input\_instance\_class) | Instance class (OnDemand or Spot) | `string` | `"OnDemand"` | no |
-| <a name="input_instance_types"></a> [instance\_types](#input\_instance\_types) | Instance type for the node group (e.g., t3.medium) | `list(string)` | n/a | yes |
+| <a name="input_instance_types"></a> [instance\_types](#input\_instance\_types) | Instance type for the node group (e.g., m5.xlarge) | `list(string)` | n/a | yes |
 | <a name="input_max_nodes"></a> [max\_nodes](#input\_max\_nodes) | Maximum number of nodes in the node group | `number` | `3` | no |
 | <a name="input_min_nodes"></a> [min\_nodes](#input\_min\_nodes) | Minimum number of nodes in the node group | `number` | `1` | no |
 | <a name="input_owner"></a> [owner](#input\_owner) | The owner name | `any` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources | `map(string)` | `{}` | no |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | ID of the VPC | `string` | n/a | yes |
-| <a name="input_vpc_subnet_ids"></a> [vpc\_subnet\_ids](#input\_vpc\_subnet\_ids) | List of subnet IDs | `list(string)` | n/a | yes |
+| <a name="input_vpc_private_subnet_ids"></a> [vpc\_private\_subnet\_ids](#input\_vpc\_private\_subnet\_ids) | List of subnet IDs | `list(string)` | n/a | yes |
 
 ## Outputs
 

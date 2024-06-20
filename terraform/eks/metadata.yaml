@@ -61,9 +61,6 @@ spec:
         vpcPrivateSubnetIds:
           type: custom:vpcPrivateSubnetIds
           autofill: true
-        vpcPublicSubnetIds:
-          type: custom:vpcPublicSubnetIds
-          autofill: true
         region:
           type: custom:region
           autofill: true

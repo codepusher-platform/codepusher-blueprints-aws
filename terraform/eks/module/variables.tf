@@ -5,7 +5,7 @@ variable "cluster_name" {
 
 variable "instance_types" {
   type        = list(string)
-  description = "Instance type for the node group (e.g., t3.medium)"
+  description = "Instance type for the node group (e.g., m5.xlarge)"
 }
 
 variable "instance_class" {
@@ -61,7 +61,7 @@ variable "vpc_id" {
   description = "ID of the VPC"
 }
 
-variable "vpc_subnet_ids" {
+variable "vpc_private_subnet_ids" {
   type = list(string)
   description = "List of subnet IDs"
 }

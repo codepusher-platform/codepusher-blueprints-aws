@@ -36,7 +36,7 @@ module "codepusher_eks" {
   }
 
   vpc_id     = var.vpc_id
-  subnet_ids = var.vpc_subnet_ids
+  subnet_ids = var.vpc_private_subnet_ids
 
   eks_managed_node_group_defaults = {
     instance_types = var.default_instance_types
