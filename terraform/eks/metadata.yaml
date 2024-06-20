@@ -36,8 +36,8 @@ spec:
           title: Instance Class
           type: select
           items:
-            - "OnDemand"
-            - "Spot"
+            - "ON_DEMAND"
+            - "SPOT"
         minNodes:
           title: Min Nodes
           type: int
