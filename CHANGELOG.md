@@ -1,3 +1,10 @@
+## [0.2.6](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.5...v0.2.6) (2024-06-20)
+
+
+### Bug Fixes
+
+* **pre-commit:** fix flag ([75a215e](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/75a215e59bf03a9ca516e93743e128520d961ff1))
+
 ## [0.2.5](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.4...v0.2.5) (2024-06-20)
 
 
