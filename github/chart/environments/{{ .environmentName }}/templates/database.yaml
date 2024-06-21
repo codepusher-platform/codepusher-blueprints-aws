@@ -1,0 +1,19 @@
+{{- if .Values.db.enabled -}}
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: {{ include "..fullname" . }}-db
+labels:
+  backstage.io/kubernetes-id: {{ .Chart.Name }}
+spec:
+  instances: {{ .Values.db.instances }}
+  primaryUpdateStrategy:  {{ .Values.db.updateStrategy }}
+  enableSuperuserAccess: {{ .Values.db.enableSuperUser }}
+  bootstrap:
+    initdb:
+      database: {{ .Values.db.name }}
+      owner: {{ include "..fullname" . }}
+
+  storage:
+    size:  {{ .Values.db.storage.size }}
+{{- end }}
