@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.0...v0.3.1) (2024-06-21)
+
+
+### Bug Fixes
+
+* **environment:** added missing region output ([f9032ea](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/f9032eabcb81aa04c411dffcacb039bcf5246b0d))
+
 # [0.3.0](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.8...v0.3.0) (2024-06-21)
 
 
