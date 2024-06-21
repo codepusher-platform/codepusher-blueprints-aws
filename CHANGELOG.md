@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.8...v0.3.0) (2024-06-21)
+
+
+### Features
+
+* **services:** added services templates ([#10](https://github.com/codepusher-platform/codepusher-blueprints-aws/issues/10)) ([85cfd0f](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/85cfd0f5114f90005635a52c1932dfbb71b0dc0e))
+
 ## [0.2.8](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.2.7...v0.2.8) (2024-06-20)
 
 
