@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.1...v0.3.2) (2024-06-21)
+
+
+### Bug Fixes
+
+* **environment:** removed failed output ([ba5fb72](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/ba5fb72bb0e37f2c188d281c71c593e0e5cbf418))
+
 ## [0.3.1](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.0...v0.3.1) (2024-06-21)
 
 
