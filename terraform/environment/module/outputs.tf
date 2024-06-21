@@ -23,7 +23,3 @@ output "public_subnets" {
   value       = module.vpc.public_subnets
 }
 
-output "region" {
-  description = "AWS Region"
-  value       = module.var.region
-}

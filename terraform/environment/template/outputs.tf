@@ -22,8 +22,3 @@ output "public_subnets" {
   description = "List of IDs of public subnets"
   value       = module.aws_environment.public_subnets
 }
-
-output "region" {
-  description = "The region"
-  value       = module.aws_environment.region
-}
