@@ -22,3 +22,8 @@ output "public_subnets" {
   description = "List of IDs of public subnets"
   value       = module.vpc.public_subnets
 }
+
+output "region" {
+  description = "AWS Region"
+  value       = module.var.region
+}
