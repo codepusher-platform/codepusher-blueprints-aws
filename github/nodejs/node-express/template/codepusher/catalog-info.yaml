@@ -1,0 +1,19 @@
+apiVersion: codepusher.io/v1alpha1
+kind: Service
+metadata:
+  name: "{{ .serviceName }}"
+  description: "{{ .serviceDescription }}"
+spec:
+  language: nodejs
+  codeUrl: "https://{{ .githubOrg }}/{{ .serviceName }}"
+  chartUrl: "{{ .githubOrg }}/{{ .serviceName }}-chart"
+  resources: "{{ .resources }}"
+  internetFacing: "{{ .internetFacing }}"
+  teamOwner: "{{ .owner }}"
+  dataSources:
+    vulnerabilities: snyk
+    qualityGateway: sonarqube
+    observability: datadog
+    costInsights: opencost
+    deployments: argocd
+    ci: github-actions

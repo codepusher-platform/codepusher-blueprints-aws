@@ -1,0 +1,98 @@
+replicaCount: 1
+
+image:
+  repository: {{ .imageRegistry }}/{{ .serviceName }}
+  pullPolicy: IfNotPresent
+  tag: ""
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  automount: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+podLabels: {}
+
+podSecurityContext: {}
+
+securityContext:
+  capabilities:
+    drop:
+      - ALL
+  readOnlyRootFilesystem: false
+  runAsNonRoot: true
+  runAsUser: 1000
+env:
+  - name: PORT
+    value: "7000"
+  - name: DISABLE_PROFILER
+    value: "1"
+service:
+  name: grpc
+  type: ClusterIP
+  port: 7000
+  targetPort: 7000
+  protocol: TCP
+
+ingress:
+  enabled: {{ .internetFacing }}
+  className: "alb"
+  annotations:
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/backend-protocol: HTTP
+    ingress.kubernetes.io/force-ssl-redirect: "true"
+    external-dns.alpha.kubernetes.io/hostname: {{ .domainUrl }}
+  hosts:
+    - host: {{ .domainUrl }}
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+resources:
+  limits:
+    cpu: {{ .cpuLimit }}
+    memory: {{ .memoryLimit }}
+  requests:
+    cpu: {{ .cpuRequest }}
+    memory: {{ .memoryRequest }}
+
+autoscaling:
+  enabled: {{ .autoscale }}
+  minReplicas: {{ .minReplicas }}
+  maxReplicas: {{ .maxReplicas }}
+  targetCPUUtilizationPercentage: 80
+
+volumes: []
+# - name: foo
+#   secret:
+#     secretName: mysecret
+#     optional: false
+
+# Additional volumeMounts on the output Deployment definition.
+volumeMounts: []
+# - name: foo
+#   mountPath: "/etc/foo"
+#   readOnly: true
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+db:
+  enabled: false
+  # name: backstage_plugin_catalog
+  # instances: 1
+  # updateStrategy: unsupervised
+  # enableSuperUser: true
+  # storage:
+  #   size: 1Gi
