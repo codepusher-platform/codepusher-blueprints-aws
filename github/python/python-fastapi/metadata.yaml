@@ -35,68 +35,6 @@ spec:
           type: select
           items:
             type: custom:teams
-        environments:
-          type: custom:name
         githubOrg:
           type: custom:githubOrg
           autofill: true
-        imageRegistry:
-          type: custom:imageRegistry
-
-    - title: Resource Configuration
-      properties:
-        cpuLimit:
-          title: CPU Limit
-          type: string
-          default: "0.5"
-          description: "Maximum CPU cores for the service (e.g., '1', '0.5'). Limits resource usage during peaks."
-        cpuRequest:
-          title: CPU Request
-          type: string
-          default: "0.25"
-          description: "Minimum guaranteed CPU cores for the service. Ensures basic functionality under normal load."
-        memoryLimit:
-          title: Memory Limit
-          type: string
-          default: "512Mi"
-          description: "Maximum memory (e.g., '1Gi', '512Mi') the service can use. Prevents excessive consumption."
-        memoryRequest:
-          title: Memory Request
-          type: string
-          default: "256Mi"
-          description: "Minimum guaranteed memory for the service. Sufficient for starting and handling typical requests."
-
-    - title: Scaling and Networking
-      properties:
-        autoscale:
-          title: Autoscale
-          type: boolean
-          default: false
-          description: "Enable automatic scaling based on resource usage (CPU/Memory)."
-        minReplicas:
-          title: Minimum Replicas
-          type: integer
-          default: 1
-          description: "Minimum number of service instances to keep running."
-          condition: autoscale
-        maxReplicas:
-          title: Maximum Replicas
-          type: integer
-          default: 3
-          description: "Maximum number of instances to scale up to during high traffic."
-          condition: autoscale
-        port:
-          title: Service Port
-          type: integer
-          default: 8000  # Typical for FastAPI
-          description: "The port your FastAPI application listens on."
-        internetFacing:
-          title: Internet Facing
-          type: boolean
-          default: true
-          description: "Make the API publicly accessible."
-        domainUrl:
-          title: Domain URL
-          type: string
-          description: "The custom domain for your API if it's public (e.g., 'api.mysite.com')."
-          condition: internetFacing

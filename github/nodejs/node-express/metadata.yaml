@@ -10,6 +10,7 @@ metadata:
     - nodejs
     - express
     - service
+    - api
 spec:
   templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/github/nodejs/node-express/template"
   provider: aws
@@ -34,68 +35,7 @@ spec:
           type: select
           items:
             type: custom:teams
-        environments:
-          type: custom:name
         githubOrg:
           type: custom:githubOrg
           autofill: true
-        imageRegistry:
-          type: custom:imageRegistry
 
-    - title: Resource Configuration
-      properties:
-        cpuLimit:
-          title: CPU Limit
-          type: string
-          default: "0.5"
-          description: "The maximum CPU cores the service can use (e.g., '1', '0.5'). This limits resource consumption during peak loads."
-        cpuRequest:
-          title: CPU Request
-          type: string
-          default: "0.25"
-          description: "The minimum CPU cores guaranteed to the service. Ensures the service has enough resources to start and run under normal conditions."
-        memorylimit:
-          title: Memory Limit
-          type: string
-          default: "512Mi"
-          description: "The maximum memory (e.g., '1Gi', '512Mi') the service can use. Prevents excessive memory usage."
-        memoryRequest:
-          title: Memory Request
-          type: string
-          default: "256Mi"
-          description: "The minimum memory guaranteed to the service. Ensures the service has enough memory to start and handle typical requests."
-
-    - title: Scaling and Networking
-      properties:
-        autoscale:
-          title: Autoscale
-          type: boolean
-          default: false
-          description: "Enable automatic scaling of replicas based on resource usage."
-        minReplicas:
-          title: Minimum Replicas
-          type: integer
-          default: 1
-          description: "The minimum number of service replicas to keep running at all times."
-          condition: autoscale 
-        maxReplicas:
-          title: Maximum Replicas
-          type: integer
-          default: 3
-          description: "The maximum number of replicas to scale up to during high traffic."
-          condition: autoscale 
-        port:
-          title: Service Port
-          type: integer
-          default: 3000
-          description: "The port number your Node.js Express application listens on."
-        internetFacing:
-          title: Internet Facing
-          type: boolean
-          default: true
-          description: "Make the service accessible from the public internet."  
-        domainUrl: 
-          title: Domain URL
-          type: string
-          description: "The custom domain name (e.g., 'myapp.example.com') to use if the service is public."
-          condition: internetFacing 
