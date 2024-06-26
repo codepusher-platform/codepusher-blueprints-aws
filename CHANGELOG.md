@@ -1,3 +1,10 @@
+## [0.3.3](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.2...v0.3.3) (2024-06-26)
+
+
+### Bug Fixes
+
+* **templates:** adjust services and chart templates metadata ([f806c67](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/f806c6771450916f54c5384831786a2c84766cfd))
+
 ## [0.3.2](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.1...v0.3.2) (2024-06-21)
 
 
