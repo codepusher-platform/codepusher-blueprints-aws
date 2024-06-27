@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.3...v0.3.4) (2024-06-27)
+
+
+### Bug Fixes
+
+* github/python/python-fastapi/template/Dockerfile to reduce vulnerabilities ([#12](https://github.com/codepusher-platform/codepusher-blueprints-aws/issues/12)) ([f8d8061](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/f8d80613d69a0976d9197219bc1fd19375fb5f0e))
+
 ## [0.3.3](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.2...v0.3.3) (2024-06-26)
 
 
