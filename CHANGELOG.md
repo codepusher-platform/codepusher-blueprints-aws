@@ -1,3 +1,10 @@
+## [0.3.5](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.4...v0.3.5) (2024-06-27)
+
+
+### Bug Fixes
+
+* github/nodejs/node-express/template/package.json to reduce vulnerabilities ([#13](https://github.com/codepusher-platform/codepusher-blueprints-aws/issues/13)) ([58855b2](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/58855b2b85dc7ed43d964e950bc729aaded2f01d))
+
 ## [0.3.4](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.3...v0.3.4) (2024-06-27)
 
 
