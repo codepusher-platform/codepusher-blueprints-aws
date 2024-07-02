@@ -1,21 +1,20 @@
 apiVersion: codepusher.io/v1alpha1
 kind: template
 metadata:
-  name: aws-fastapi-service
-  displayName: Deploy FastAPI Service on AWS (EKS)
-  description: A template to deploy a high-performance FastAPI service on Amazon EKS, with options for autoscaling, resource management, and API gateway integration.
+  name: python-fastapi-service
+  displayName: Scaffold a new Python+FastAPI service
+  description: Quickly set up a new Python FastAPI project with this template.
   tags:
-    - aws
-    - eks
     - python
     - fastapi
     - service
     - api
 spec:
   templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/github/python/python-fastapi/template"
-  provider: aws
+  provider: github
   owner: codepusher-team
   type: service
+  language: python
   engine:
     type: github
     version: "1.0.0"

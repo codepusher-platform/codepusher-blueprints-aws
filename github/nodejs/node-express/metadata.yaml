@@ -1,20 +1,19 @@
 apiVersion: codepusher.io/v1alpha1
 kind: template
 metadata:
-  name: aws-nodejs-express-service
-  displayName: Deploy Node.js Express Service on AWS (EKS)
-  description: A template to deploy a scalable Node.js Express service on Amazon EKS, with options for autoscaling, resource configuration, and internet exposure.
+  name: nodejs-express-service
+  displayName: Scaffold a new Nodejs+Express service
+  description: Quickly create a Node.js service built with Express.
   tags:
-    - aws
-    - eks
     - nodejs
     - express
     - service
     - api
 spec:
   templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/github/nodejs/node-express/template"
-  provider: aws
+  provider: github
   owner: codepusher-team
+  language: nodejs
   type: service
   engine: 
     type: github
