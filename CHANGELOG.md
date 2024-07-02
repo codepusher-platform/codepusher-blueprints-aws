@@ -1,3 +1,10 @@
+## [0.3.7](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.6...v0.3.7) (2024-07-02)
+
+
+### Bug Fixes
+
+* **template:** added missing fields ([b560583](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/b5605836f9abd0e8945e1520172e51d05647d7ba))
+
 ## [0.3.6](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.5...v0.3.6) (2024-07-02)
 
 
