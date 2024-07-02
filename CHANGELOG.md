@@ -1,3 +1,10 @@
+## [0.3.6](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.5...v0.3.6) (2024-07-02)
+
+
+### Bug Fixes
+
+* **type:** fixed cluster and database types ([bf6cf98](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/bf6cf98dbf2f793f0e87edffc3735ce2bf39f4a1))
+
 ## [0.3.5](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.4...v0.3.5) (2024-06-27)
 
 
