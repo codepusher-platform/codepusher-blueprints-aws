@@ -18,12 +18,15 @@ spec:
   steps:
     - title: Basic Information
       properties:
+        clusterName:
+          type: select
+          items: custom:clusterName
         serviceName:
-          type: custom:appServiceName
-        imageRegistry:
-          type: custom:imageRegistry
-        environments:
-          type: custom:environmentName
+          type: select 
+          items: custom:appServiceName
+        imageRegistryName:
+          type: custom:imageRegistryName
+          autofill: true
 
     - title: Resource Configuration
       properties:
@@ -70,7 +73,7 @@ spec:
         port:
           title: Service Port
           type: integer
-          default: 8000  # Typical for FastAPI
+          default: 3000
           description: "The port your FastAPI application listens on."
         internetFacing:
           title: Internet Facing
