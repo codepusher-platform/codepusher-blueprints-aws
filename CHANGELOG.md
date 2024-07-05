@@ -1,3 +1,10 @@
+## [0.3.8](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.7...v0.3.8) (2024-07-05)
+
+
+### Bug Fixes
+
+* **template:** refactor chart template ([e42695b](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/e42695b98fd52bdbf6a5b28d307a27d3da420e1a))
+
 ## [0.3.7](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.6...v0.3.7) (2024-07-02)
 
 
