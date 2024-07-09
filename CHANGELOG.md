@@ -1,3 +1,10 @@
+## [0.3.10](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.9...v0.3.10) (2024-07-09)
+
+
+### Bug Fixes
+
+* **template:** added environmentName ([b9b3d7a](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/b9b3d7aab0d7086f4041c09f8804e8ec065cbd3b))
+
 ## [0.3.9](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.8...v0.3.9) (2024-07-09)
 
 
