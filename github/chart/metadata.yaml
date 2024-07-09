@@ -30,6 +30,12 @@ spec:
         environmentName:
           type: custom:environmentName
           autofill: true
+        projectName:
+          type: custom:projectName 
+          autofill: true
+        githubOrg:
+          type: custom:githubOrg 
+          autofill: true
 
     - title: Resource Configuration
       properties:
