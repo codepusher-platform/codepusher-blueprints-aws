@@ -1,3 +1,10 @@
+## [0.3.11](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.10...v0.3.11) (2024-07-09)
+
+
+### Bug Fixes
+
+* **template:** added project name and githuborg ([e10210f](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/e10210f1db02fde67091c88d2afea737c4efb705))
+
 ## [0.3.10](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.9...v0.3.10) (2024-07-09)
 
 
