@@ -1,3 +1,10 @@
+## [0.3.9](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.8...v0.3.9) (2024-07-09)
+
+
+### Bug Fixes
+
+* **values:** adjust image Registry ([c574e73](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/c574e73af40cb2eaf0e973c7f95954fb37db4206))
+
 ## [0.3.8](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.7...v0.3.8) (2024-07-05)
 
 
