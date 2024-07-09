@@ -1,3 +1,10 @@
+## [0.3.12](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.11...v0.3.12) (2024-07-09)
+
+
+### Bug Fixes
+
+* **chart:** adjust folder pattern ([dc7da84](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/dc7da84d877400c5359794fcc4d4ef91088cd31e))
+
 ## [0.3.11](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.10...v0.3.11) (2024-07-09)
 
 
