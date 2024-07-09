@@ -27,6 +27,9 @@ spec:
         imageRegistryName:
           type: custom:imageRegistryName
           autofill: true
+        environmentName:
+          type: custom:environmentName
+          autofill: true
 
     - title: Resource Configuration
       properties:
