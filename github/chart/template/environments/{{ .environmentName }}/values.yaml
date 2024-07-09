@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: {{ .imageRegistry }}/{{ .serviceName }}
+  repository: {{ .imageRegistryName }}/{{ .serviceName }}
   pullPolicy: IfNotPresent
   tag: ""
 
