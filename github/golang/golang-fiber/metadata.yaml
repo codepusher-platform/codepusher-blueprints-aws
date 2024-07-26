@@ -1,0 +1,45 @@
+apiVersion: codepusher.io/v1alpha1
+kind: template
+metadata:
+  name: golang-fiber-service
+  displayName: Scaffold a new Golang Fiber service
+  description: Quickly set up a new Golang project with the Fiber web framework.
+  tags:
+    - golang
+    - fiber
+    - service
+    - api
+spec:
+  templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/github/golang/golang-fiber/template" # Replace with your actual template URL
+  provider: github
+  owner: codepusher-developers
+  type: service
+  language: golang
+  engine:
+    type: github
+    version: "1.0.0"
+  steps:
+    - title: Basic Information
+      properties:
+        serviceName:
+          title: Service Name (K8s)
+          type: string
+          description: "Unique name for your Golang service within Kubernetes (e.g., 'my-golang-fiber-app')."
+        project:
+          title: Project Name (GitHub)
+          type: string
+          description: "The name of your GitHub repository where your Golang project's code resides."
+        owner:
+          title: Owner
+          type: select
+          items:
+            type: custom:teams
+        githubOrg:
+          type: custom:githubOrg
+          autofill: true
+        additionalDependencies:
+          title: Additional Dependencies
+          type: array
+          description: "Add any additional Go modules you need (e.g., 'gorm.io/gorm', 'github.com/go-redis/redis')."
+          items:
+            type: string

@@ -1,0 +1,50 @@
+apiVersion: codepusher.io/v1alpha1
+kind: template
+metadata:
+  name: csharp-dotnet-service
+  displayName: Scaffold a new C# .NET service
+  description: Quickly set up a new C# project with the ASP.NET Core framework.
+  tags:
+    - csharp
+    - dotnet
+    - aspnetcore
+    - service
+    - api
+spec:
+  templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/github/csharp/csharp-dotnet/template" # Replace with your actual template URL
+  provider: github
+  owner: codepusher-developers
+  type: service
+  language: csharp
+  engine:
+    type: github
+    version: "1.0.0"
+  steps:
+    - title: Basic Information
+      properties:
+        serviceName:
+          title: Service Name (K8s)
+          type: string
+          description: "Unique name for your C# service within Kubernetes (e.g., 'my-csharp-dotnet-app')."
+        project:
+          title: Project Name (GitHub)
+          type: string
+          description: "The name of your GitHub repository where your C# project's code resides."
+        owner:
+          title: Owner
+          type: select
+          items:
+            type: custom:teams
+        githubOrg:
+          type: custom:githubOrg
+          autofill: true
+        databaseProvider:
+          title: Database Provider
+          type: select
+          description: "Select your preferred database provider."
+          items:
+            - sqlserver
+            - postgresql
+            - mysql
+            - sqlite
+            - none
