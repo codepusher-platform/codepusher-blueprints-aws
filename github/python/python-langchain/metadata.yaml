@@ -1,0 +1,50 @@
+apiVersion: codepusher.io/v1alpha1
+kind: template
+metadata:
+  name: langchain-python-flask-service
+  displayName: Scaffold a new LangChain Python Flask service
+  description: Quickly set up a new LangChain service using Python and Flask.
+  tags:
+    - langchain
+    - python
+    - flask
+    - service
+    - ai
+spec:
+  templateUrl: "https://github.com/your-github-org/langchain-flask-template"  # Replace with your actual template URL
+  provider: github
+  owner: your-github-team  
+  type: service
+  language: python
+  engine:
+    type: github
+    version: "1.0.0"
+  steps:
+    - title: Basic Information
+      properties:
+        serviceName:
+          title: Service Name (K8s)
+          type: string
+          description: "Unique name for your LangChain service within Kubernetes (e.g., 'my-langchain-app')."
+        project:
+          title: Project Name (GitHub)
+          type: string
+          description: "The name of your GitHub repository where your LangChain project's code resides."
+        owner:
+          title: Owner
+          type: select
+          items:
+            type: custom:teams
+        githubOrg:
+          type: custom:githubOrg
+          autofill: true
+        llmProvider:  
+          title: LLM Provider
+          type: select
+          description: "Select your preferred Large Language Model (LLM) provider."
+          default: openai
+          items:
+            - openai
+            - azure
+            - google
+            - other     
