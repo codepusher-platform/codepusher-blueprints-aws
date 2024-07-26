@@ -14,7 +14,7 @@ spec:
   provider: github
   owner: codepusher-developers
   type: service
-  language: golang
+  language: go
   engine:
     type: github
     version: "1.0.0"
