@@ -11,9 +11,9 @@ metadata:
     - service
     - ai
 spec:
-  templateUrl: "https://github.com/your-github-org/langchain-flask-template"  # Replace with your actual template URL
+  templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/github/python/python-langchain/template"  # Replace with your actual template URL
   provider: github
-  owner: your-github-team  
+  owner: codepusher-team  
   type: service
   language: python
   engine:

@@ -10,9 +10,9 @@ metadata:
     - service
     - api
 spec:
-  templateUrl: "https://github.com/your-github-org/springboot-template"  # Replace with your actual template URL
+  templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/github/java/java-springboot/template"  # Replace with your actual template URL
   provider: github
-  owner: your-github-team
+  owner: codepusher-team
   type: service
   language: java
   engine:
