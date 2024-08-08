@@ -21,7 +21,7 @@ spec:
           title: AWS Account
           type: select
           items:
-            type: custom:list:cloudAccountIntegration:id
+            type: custom:list:cloudAccountIntegration:cloudAccountId
         name:
           title: Environment Name
           type: string
@@ -44,7 +44,7 @@ spec:
           items:
             type: custom:list:team:name
         roleArn:
-          type: custom:roleArn
+          type: custom:get:cloudAccountIntegration:roleArn
           autofill: true
         stateBucket:
           type: custom:get:cloudAccountIntegration:stateBucket
