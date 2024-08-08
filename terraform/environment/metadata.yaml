@@ -44,11 +44,11 @@ spec:
           items:
             type: custom:list:team:name
         roleArn:
-          type: custom:get:cloudAccountIntegration:roleArn
+          type: custom:get:cloudAccountIntegration:roleArn:cloudAccountId
           autofill: true
         stateBucket:
-          type: custom:get:cloudAccountIntegration:stateBucket
+          type: custom:get:cloudAccountIntegration:stateBucket:cloudAccountId
           autofill: true
         stateTable:
-          type: custom:get:cloudAccountIntegration:stateDynamodbTable
+          type: custom:get:cloudAccountIntegration:stateDynamodbTable:cloudAccountId
           autofill: true
