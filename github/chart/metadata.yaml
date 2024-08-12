@@ -20,21 +20,21 @@ spec:
       properties:
         clusterName:
           type: select
-          items: custom:clusterName
+          items: list:cluster
         serviceName:
           type: select 
-          items: custom:appServiceName
+          items: list:service
         imageRegistryName:
-          type: custom:imageRegistryName
+          type: get:cluster:registryName
           autofill: true
         environmentName:
-          type: custom:environmentName
+          type: get:cluster:environmentName
           autofill: true
         projectName:
-          type: custom:projectName 
+          type: get:service:projectName
           autofill: true
         githubOrg:
-          type: custom:githubOrg 
+          type: get:integration:githubOrg
           autofill: true
 
     - title: Resource Configuration

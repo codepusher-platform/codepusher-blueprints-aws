@@ -54,25 +54,25 @@ spec:
           title: Owner
           type: select
           items:
-            type: custom:teams
+            type: list:team
         vpcId:
-          type: custom:vpcId
+          type: get:environment:vpcId
           autofill: true
         vpcPrivateSubnetIds:
-          type: custom:vpcPrivateSubnetIds
+          type: get:environment:vpcPrivateSubnetIds
           autofill: true
         region:
-          type: custom:region
+          type: get:environment:region
           autofill: true
         environmentName:
-          type: custom:environmentName
+          type: get:environment:environmentName
           autofill: true
         roleArn:
-          type: custom:roleArn
+          type: get:cloudAccount:roleArn
           autofill: true
         stateBucket:
-          type: custom:stateBucket
+          type: get:cloudAccount:stateBucket
           autofill: true
         stateTable:
-          type: custom:stateTable
+          type: get:cloudAccount:stateTable
           autofill: true

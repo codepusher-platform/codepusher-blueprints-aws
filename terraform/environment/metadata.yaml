@@ -21,7 +21,7 @@ spec:
           title: AWS Account
           type: select
           items:
-            type: custom:list:cloudAccountIntegration:cloudAccountId
+            type: list:cloudAccount
         name:
           title: Environment Name
           type: string
@@ -42,13 +42,13 @@ spec:
           title: Owner
           type: select
           items:
-            type: custom:list:team:name
+            type: list:team
         roleArn:
-          type: custom:get:cloudAccountIntegration:data.roleArn:cloudAccountId
+          type: get:cloudAccount:roleArn
           autofill: true
         stateBucket:
-          type: custom:get:cloudAccountIntegration:data.stateBucket:cloudAccountId
+          type: get:cloudAccount:stateBucket
           autofill: true
         stateTable:
-          type: custom:get:cloudAccountIntegration:data.stateDynamodbTable:cloudAccountId
+          type: get:cloudAccount:stateTable
           autofill: true

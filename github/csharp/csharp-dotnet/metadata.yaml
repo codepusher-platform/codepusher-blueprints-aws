@@ -34,9 +34,9 @@ spec:
           title: Owner
           type: select
           items:
-            type: custom:teams
+            type: list:team
         githubOrg:
-          type: custom:githubOrg
+          type: get:integration:githubOrg
           autofill: true
         databaseProvider:
           title: Database Provider
