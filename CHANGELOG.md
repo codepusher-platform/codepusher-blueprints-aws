@@ -1,3 +1,10 @@
+## [0.3.14](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.13...v0.3.14) (2024-08-14)
+
+
+### Bug Fixes
+
+* **output/rds:** changed module name ([22467a7](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/22467a7eacf386240ce4baa0ef15f22766d1a885))
+
 ## [0.3.13](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.12...v0.3.13) (2024-08-14)
 
 
