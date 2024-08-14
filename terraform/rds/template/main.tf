@@ -3,15 +3,15 @@ module "aws_rds" {
 
   db_name                       = "{{ .name }}"
   service_role                  = "{{ .serviceRole }}"
-  max_capacity                  = "{{ .maxCapacity }}"
-  min_capacity                  = "{{ .minCapacity }}"
+  max_capacity                  = {{ .maxCapacity }}
+  min_capacity                  = {{ .minCapacity }}
   instance_type                 = "{{ .instanceType }}"
   engine                        = "{{ .engine }}"
   engine_version                = "{{ .engineVersion }}"
   cluster_family                = "{{ .clusterFamily }}"
-  cluster_size                  = "{{ .clusterSize }}"
+  cluster_size                  = {{ .clusterSize }}
   vpc_id                        = "{{ .vpcId }}"
-  subnet_ids                    = "{{ .vpcSubnetIds }}"
+  subnet_ids                    = {{ .vpcSubnetIds }}
   vpc_default_security_group_id = "{{ .vpcDefaultSecurityGroupId }}"
   owner                         = "{{ .owner }}"
 }
