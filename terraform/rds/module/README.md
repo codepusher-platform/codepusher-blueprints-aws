@@ -45,8 +45,8 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_rds_cluster_arn"></a> [rds\_cluster\_arn](#output\_rds\_cluster\_arn) | The ARN of the RDS cluster. |
-| <a name="output_rds_cluster_endpoint"></a> [rds\_cluster\_endpoint](#output\_rds\_cluster\_endpoint) | The endpoint for the primary instance of the RDS cluster. |
-| <a name="output_rds_cluster_id"></a> [rds\_cluster\_id](#output\_rds\_cluster\_id) | The ID of the RDS cluster. |
-| <a name="output_rds_cluster_reader_endpoint"></a> [rds\_cluster\_reader\_endpoint](#output\_rds\_cluster\_reader\_endpoint) | The reader endpoint for the RDS cluster. |
+| <a name="output_cluster_arn"></a> [cluster\_arn](#output\_cluster\_arn) | The ARN of the RDS cluster. |
+| <a name="output_cluster_endpoint"></a> [cluster\_endpoint](#output\_cluster\_endpoint) | The endpoint for the primary instance of the RDS cluster. |
+| <a name="output_cluster_id"></a> [cluster\_id](#output\_cluster\_id) | The ID of the RDS cluster. |
+| <a name="output_cluster_reader_endpoint"></a> [cluster\_reader\_endpoint](#output\_cluster\_reader\_endpoint) | The reader endpoint for the RDS cluster. |
 <!-- END_TF_DOCS -->
