@@ -1,3 +1,10 @@
+## [0.3.16](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.15...v0.3.16) (2024-08-14)
+
+
+### Bug Fixes
+
+* **module/rds:** changed output values ([e6f9ef2](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/e6f9ef20832453f96796667bfd506a87bffc8657))
+
 ## [0.3.15](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.14...v0.3.15) (2024-08-14)
 
 
