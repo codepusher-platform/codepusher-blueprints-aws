@@ -18,4 +18,11 @@ module "rds_cluster" {
     max_capacity = var.max_capacity
     min_capacity = var.min_capacity
   }
+
+  tags = merge(var.tags, {
+    resource-type = "rds"
+    managedby     = "codepusher-platform"
+    owner         = var.owner
+  })
 }
+

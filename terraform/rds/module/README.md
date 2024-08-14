@@ -34,8 +34,10 @@ No resources.
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The type of instance to use for the RDS cluster. | `string` | n/a | yes |
 | <a name="input_max_capacity"></a> [max\_capacity](#input\_max\_capacity) | The maximum capacity for the ServerlessV2 scaling configuration. | `number` | `1` | no |
 | <a name="input_min_capacity"></a> [min\_capacity](#input\_min\_capacity) | The minimum capacity for the ServerlessV2 scaling configuration. | `number` | `0.5` | no |
+| <a name="input_owner"></a> [owner](#input\_owner) | The owner name | `any` | n/a | yes |
 | <a name="input_service_role"></a> [service\_role](#input\_service\_role) | Service role associated with the RDS cluster. | `string` | n/a | yes |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | A list of subnet IDs for the RDS cluster. | `list(string)` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources | `map(string)` | `{}` | no |
 | <a name="input_vpc_default_security_group_id"></a> [vpc\_default\_security\_group\_id](#input\_vpc\_default\_security\_group\_id) | The ID of the default security group for the VPC. | `string` | n/a | yes |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The ID of the VPC in which to create the RDS cluster. | `string` | n/a | yes |
 

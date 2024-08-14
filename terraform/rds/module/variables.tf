@@ -71,3 +71,13 @@ variable "min_capacity" {
   type        = number
   default     = 0.5
 }
+
+variable "tags" {
+  description = "A map of tags to add to all resources"
+  type        = map(string)
+  default     = {}
+}
+
+variable "owner" {
+  description = "The owner name"
+}
