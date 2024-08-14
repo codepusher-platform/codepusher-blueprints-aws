@@ -1,3 +1,10 @@
+## [0.3.13](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.12...v0.3.13) (2024-08-14)
+
+
+### Bug Fixes
+
+* **template/rds:** added missing variables ([e551578](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/e551578292b1921276b3b5c1a7ca63a71c579490))
+
 ## [0.3.12](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.11...v0.3.12) (2024-07-09)
 
 
