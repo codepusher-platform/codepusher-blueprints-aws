@@ -1,19 +1,19 @@
-output "rds_cluster_endpoint" {
+output "aws_rds_endpoint" {
   description = "The endpoint for the primary instance of the RDS cluster."
-  value       = module.rds_cluster.cluster_endpoint
+  value       = module.aws_rds.cluster_endpoint
 }
 
-output "rds_cluster_reader_endpoint" {
+output "aws_rds_reader_endpoint" {
   description = "The reader endpoint for the RDS cluster."
-  value       = module.rds_cluster.cluster_reader_endpoint
+  value       = module.aws_rds.cluster_reader_endpoint
 }
 
-output "rds_cluster_arn" {
+output "aws_rds_arn" {
   description = "The ARN of the RDS cluster."
-  value       = module.rds_cluster.cluster_arn
+  value       = module.aws_rds.cluster_arn
 }
 
-output "rds_cluster_id" {
+output "aws_rds_id" {
   description = "The ID of the RDS cluster."
-  value       = module.rds_cluster.cluster_id
+  value       = module.aws_rds.cluster_id
 }
