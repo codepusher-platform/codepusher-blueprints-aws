@@ -1,3 +1,10 @@
+## [0.3.17](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.16...v0.3.17) (2024-08-16)
+
+
+### Bug Fixes
+
+* **rds:** changed var name of rds cluster module ([fe3ad66](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/fe3ad66a76e3d4c502806c1c5356c488ed2c4409))
+
 ## [0.3.16](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.15...v0.3.16) (2024-08-14)
 
 
