@@ -9,7 +9,7 @@ module "rds_cluster" {
   iam_database_authentication_enabled = var.iam_database_authentication_enabled
   iam_roles                           = [var.service_role]
   cluster_size                        = var.cluster_size
-  db_name                             = var.db_name
+  name                                = var.db_name
   vpc_id                              = var.vpc_id
   subnets                             = var.subnet_ids
   security_groups                     = [var.vpc_default_security_group_id]
