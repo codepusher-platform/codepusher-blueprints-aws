@@ -1,3 +1,10 @@
+## [0.3.19](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.18...v0.3.19) (2024-08-19)
+
+
+### Bug Fixes
+
+* **metadata:** fix aurora metadata types ([9a6d897](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/9a6d897a097fc1b0675277bb7f685383a9eb523b))
+
 ## [0.3.18](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.17...v0.3.18) (2024-08-19)
 
 
