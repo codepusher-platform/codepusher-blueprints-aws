@@ -13,7 +13,7 @@ spec:
   templateUrl: "https://github.com/codepusher-platform/codepusher-blueprints-aws/blob/main/terraform/rds/template"
   provider: aws
   owner: codepusher-team
-  type: database
+  type: resource
   engine: 
     type: opentofu
     version: "1.17"
