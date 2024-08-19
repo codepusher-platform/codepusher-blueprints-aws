@@ -1,3 +1,10 @@
+## [0.3.18](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.17...v0.3.18) (2024-08-19)
+
+
+### Bug Fixes
+
+* **type:** fixed rds type ([ff0dbcb](https://github.com/codepusher-platform/codepusher-blueprints-aws/commit/ff0dbcbfd92594ac3795ef6519a7a0f0524f2035))
+
 ## [0.3.17](https://github.com/codepusher-platform/codepusher-blueprints-aws/compare/v0.3.16...v0.3.17) (2024-08-16)
 
 
