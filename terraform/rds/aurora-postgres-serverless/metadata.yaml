@@ -34,12 +34,20 @@ spec:
           type: number
           default: 0.5
           description: "The minimum capacity for the ServerlessV2 scaling configuration." 
-        serviceRole:
-          title: Attach to Service
-          description: "The service that will access the database."
+        environmentName:
+          title: Select Environment
           type: select
           items:
-            type: custom:serviceRole
+            type: list:environment
+        deployments:
+          title: Select Deployment
+          type: select
+          dependsOn: environmentName
+          items:
+            type: list:deployment
+        serviceRole:
+          type: get:deployment:serviceRole
+          autofill: true
         instanceType:
           type: string
           autofill: true
@@ -61,31 +69,28 @@ spec:
           default: 1
           autofill: true
         vpcId:
-          type: custom:vpcId
+          type: get:environment:vpcId
           autofill: true
         vpcSubnetIds:
-          type: custom:vpcSubnetIds
+          type: get:environment:vpcPrivateSubnetIds
           autofill: true
         vpcDefaultSecurityGroupId:
-          type: custom:vpcDefaultSecurityGroupId
+          type: get:environment:vpcDefaultSecurityGroupId
           autofill: true
         owner:
           title: Owner
           type: select
           items:
-            type: custom:teams
+            type: list:team
         region:
-          type: custom:region
-          autofill: true
-        environment:
-          type: custom:name
+          type: get:environment:region
           autofill: true
         roleArn:
-          type: custom:roleArn
+          type: get:environment:roleArn
           autofill: true
         stateBucket:
-          type: custom:stateBucket
+          type: get:environment:stateBucket
           autofill: true
         stateTable:
-          type: custom:stateTable
+          type: get:environment:stateTable
           autofill: true
