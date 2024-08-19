@@ -50,7 +50,7 @@ spec:
           type: select
           items:
             type: list:environment
-        deployments:
+        deployment:
           title: Select Deployment
           type: select
           dependsOn: environmentName
