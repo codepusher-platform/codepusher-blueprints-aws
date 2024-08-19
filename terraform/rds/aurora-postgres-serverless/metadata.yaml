@@ -34,6 +34,17 @@ spec:
           type: number
           default: 0.5
           description: "The minimum capacity for the ServerlessV2 scaling configuration." 
+        resourceType:
+          title: Resource Type
+          type: select
+          items:
+            - "DynamoDB"
+            - "S3"
+            - "Postgres"
+        internetFacing:
+          title: Internet Facing
+          type: boolean
+          default: false
         environmentName:
           title: Select Environment
           type: select
