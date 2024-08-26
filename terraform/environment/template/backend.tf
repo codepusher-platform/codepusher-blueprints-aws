@@ -12,5 +12,6 @@ terraform {
     region         = "{{ .region }}"
     encrypt        = true
     dynamodb_table = "{{ .stateTable }}"
+    role_arn       = "{{ .roleArn }}"
   }
 }
