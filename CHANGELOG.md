@@ -1,3 +1,10 @@
+## [0.3.22](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.21...v0.3.22) (2024-08-29)
+
+
+### Bug Fixes
+
+* **templates:** get security group from env and adjust rds ([a112a9c](https://github.com/chip-labs/codepusher-blueprints-aws/commit/a112a9c2a371a9265a870ebad482bedab501515e))
+
 ## [0.3.21](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.20...v0.3.21) (2024-08-29)
 
 
