@@ -22,3 +22,8 @@ output "public_subnets" {
   description = "List of IDs of public subnets"
   value       = module.aws_environment.public_subnets
 }
+
+output "default_security_group_id" {
+  description = "The Default Security Group Id"
+  value       = module.aws_environment.default_security_group_id
+}
