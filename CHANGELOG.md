@@ -1,3 +1,10 @@
+## [0.3.21](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.20...v0.3.21) (2024-08-29)
+
+
+### Bug Fixes
+
+* **eks:** added missing role_arn backend field ([2939843](https://github.com/chip-labs/codepusher-blueprints-aws/commit/29398436af6b0d6654f10c2a48f74c28b5de9224))
+
 ## [0.3.20](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.19...v0.3.20) (2024-08-26)
 
 
