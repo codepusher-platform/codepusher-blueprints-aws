@@ -71,19 +71,19 @@ spec:
           description: "Enable automatic scaling based on resource usage (CPU/Memory)."
         minReplicas:
           title: Minimum Replicas
-          type: integer
+          type: number
           default: 1
           description: "Minimum number of service instances to keep running."
           condition: autoscale
         maxReplicas:
           title: Maximum Replicas
-          type: integer
+          type: number
           default: 3
           description: "Maximum number of instances to scale up to during high traffic."
           condition: autoscale
         port:
           title: Service Port
-          type: integer
+          type: number
           default: 3000
           description: "The port your FastAPI application listens on."
         internetFacing:
