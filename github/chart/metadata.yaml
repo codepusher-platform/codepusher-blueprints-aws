@@ -1,3 +1,4 @@
+#
 apiVersion: codepusher.io/v1alpha1
 kind: template
 metadata:
