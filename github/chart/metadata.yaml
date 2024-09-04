@@ -20,10 +20,12 @@ spec:
       properties:
         clusterName:
           type: select
-          items: list:cluster
+          items: 
+            type: list:cluster
         serviceName:
           type: select 
-          items: list:service
+          items: 
+            trpe: list:service
         imageRegistryName:
           type: get:cluster:registryName
           autofill: true
