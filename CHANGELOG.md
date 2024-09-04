@@ -1,3 +1,10 @@
+## [0.3.26](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.25...v0.3.26) (2024-09-04)
+
+
+### Bug Fixes
+
+* **deploy:** fix deploy ([1180709](https://github.com/chip-labs/codepusher-blueprints-aws/commit/11807090b05ec7dc8c69f863e3a43ce9e34bc7e4))
+
 ## [0.3.25](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.24...v0.3.25) (2024-09-04)
 
 
