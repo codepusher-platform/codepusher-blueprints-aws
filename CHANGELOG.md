@@ -1,3 +1,10 @@
+## [0.3.28](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.27...v0.3.28) (2024-09-06)
+
+
+### Bug Fixes
+
+* **deploy:** add title in template ([3a7df69](https://github.com/chip-labs/codepusher-blueprints-aws/commit/3a7df69af91dfdacf088728d610969f3bbcdc978))
+
 ## [0.3.27](https://github.com/chip-labs/codepusher-blueprints-aws/compare/v0.3.26...v0.3.27) (2024-09-04)
 
 
