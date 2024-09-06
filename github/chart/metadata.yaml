@@ -19,10 +19,12 @@ spec:
     - title: Basic Information
       properties:
         clusterName:
+          title: Cluster Name
           type: select
           items: 
             type: list:cluster
         serviceName:
+          title: Service Name
           type: select 
           items: 
             type: list:service
